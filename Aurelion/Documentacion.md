@@ -6,16 +6,16 @@
 
 ## 1. Tema, problema y solución
 
-##🧩 Tema
+### 🧩 Tema
 
 **Análisis de ventas y comportamiento de clientes** en una tienda digital, utilizando datos de clientes, productos y transacciones registradas.
 
-## ⚠️ Problema
+### ⚠️ Problema
 
 La empresa ha detectado que algunos **clientes han dejado de comprar** o **no han concretado sus compras**, lo que representa una posible pérdida de ingresos.  
 Además, existen **productos con bajas ventas** que podrían estar afectando el flujo de inventario y el crecimiento de la tienda.
 
-## 💡 Solución
+### 💡 Solución
 
 El proyecto busca desarrollar un sistema de análisis que permita identificar:
 
@@ -25,13 +25,13 @@ El proyecto busca desarrollar un sistema de análisis que permita identificar:
 
 De esta manera, la empresa podrá **tomar decisiones basadas en datos**, optimizando sus estrategias de ventas y marketing.
 
-## 🎯 Objetivos del Proyecto
+### 🎯 Objetivos del Proyecto
 
-## Objetivo general:
+### Objetivo general:
 
 Analizar la información de ventas, clientes y productos para identificar patrones de compra, productos con baja rotación y clientes inactivos, con el fin de proponer estrategias de mejora en ventas, promoción y retención de clientes.
 
-## Objetivos específicos:
+### Objetivos específicos:
 
 1. Detectar clientes que no han realizado compras.
 2. Identificar productos con baja rotación.
@@ -41,7 +41,7 @@ Analizar la información de ventas, clientes y productos para identificar patron
 
 ---
 
-### 2. Dataset de referencia: fuente, definición, estructura, tipos y escala de medición
+## 2. Dataset de referencia: fuente, definición, estructura, tipos y escala de medición
 
 ### 📚 Fuente
 
@@ -138,15 +138,15 @@ La normalización es una práctica de diseño de bases de datos que busca organi
 - **Separación de entidades:** Cada tipo de dato (cliente, producto, venta) tiene su propio fichero (tabla), lo que mantiene el modelo organizado.
 - **Relaciones mediante IDs:** Los ficheros se vinculan entre sí usando identificadores (IDs), lo cual es el fundamento de un modelo de datos relacional.
 
-### Para una confirmación definitiva sería necesario inspeccionar las columnas de cada fichero, pero la nomenclatura y la separación de los ficheros son un claro indicativo de un diseño de datos normalizado y eficiente.
+#### Para una confirmación definitiva sería necesario inspeccionar las columnas de cada fichero, pero la nomenclatura y la separación de los ficheros son un claro indicativo de un diseño de datos normalizado y eficiente.
 
-#### 3. Información, pasos, pseudocódigo y diagrama del programa (Sprint 1)
+## 3. Información, pasos, pseudocódigo y diagrama del programa (Sprint 1)
 
 En esta etapa, el programa funciona como un **visor interactivo de la documentación**, para que el usuario pueda consultar la información clave desde la terminal.
 
 ---
 
-#### 3.1 Contenidos accesibles desde el menú
+### 3.1 Contenidos accesibles desde el menú
 
 1. Tema, problema y solución
 2. Dataset de referencia y estructura
@@ -157,7 +157,7 @@ En esta etapa, el programa funciona como un **visor interactivo de la documentac
 
 ---
 
-#### 3.2 Pasos
+### 3.2 Pasos
 
 1. Cargar en memoria los textos de esta documentación (por ejemplo, leyendo este `.md` o un módulo `textos.py`).
 2. Mostrar un menú numérico con las secciones enumeradas arriba.
@@ -166,7 +166,7 @@ En esta etapa, el programa funciona como un **visor interactivo de la documentac
 
 ---
 
-#### 3.3 Pseudocódigo
+### 3.3 Pseudocódigo
 
 ```text
 Inicio
@@ -187,9 +187,9 @@ Inicio
 Fin
 ```
 
-#### 3.4 Diagrama de flujo
+### 3.4 Diagrama de flujo
 
-##### 4.Escalas de medición
+## 4.Escalas de medición
 
 Escala Descripción Ejemplo
 Nominal Clasifica sin jerarquía ni orden; se usa para identificar o agrupar elementos. Nombre de producto, ciudad, categoría
@@ -205,7 +205,7 @@ Variables De Intervalo: fecha, fecha_alta.
 
 Variables De Razón: precio_unitario, cantidad, importe.
 
-###### 5. Sugerencias y mejoras aplicadas con Copilot
+## 5. Sugerencias y mejoras aplicadas con Copilot
 
 Separar la documentación en módulos
 Extraer los textos de cada sección a un archivo Python (por ejemplo, textos.py) para facilitar la reutilización y el mantenimiento.
