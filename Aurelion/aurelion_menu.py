@@ -1,6 +1,7 @@
 # aurelion_menu.py
 # Sistema de consulta interactiva de documentación del proyecto Aurelion
 # Curso: Guayerd
+# Para hacerlo funcionar colocar en la terminal python aurelion_menu.py
 
 
 import os
