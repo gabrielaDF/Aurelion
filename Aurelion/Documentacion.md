@@ -207,12 +207,24 @@ Variables De Razón: precio_unitario, cantidad, importe.
 
 ###### 5. Sugerencias y mejoras aplicadas con Copilot
 
-Separar la documentación en módulos reutilizables (textos.py) para que el código sea más mantenible.
+Separar la documentación en módulos
+Extraer los textos de cada sección a un archivo Python (por ejemplo, textos.py) para facilitar la reutilización y el mantenimiento.
 
-Agregar un modo de búsqueda para localizar palabras clave dentro de la documentación (por ejemplo, “precio”, “cliente”, “escala”).
+Agregar búsqueda por palabra clave
+Permitir que el usuario busque términos específicos dentro de la documentación desde el menú.
 
-Implementar una opción “exportar sección” para guardar en .txt o .md lo mostrado por pantalla.
+Opción de exportar sección
+Añadir una función para guardar la sección mostrada en pantalla en un archivo .txt o .md.
 
-Incluir tests mínimos que verifiquen que cada opción del menú imprime la sección correcta.
+Tests automáticos
+Implementar pruebas unitarias que verifiquen que cada opción del menú imprime la sección correcta.
 
-Posible ampliación futura: conexión a base de datos real y visualización en dashboard.
+Mejorar la experiencia de usuario
+
+Validar la entrada del usuario para evitar errores.
+Permitir volver atrás o salir en cualquier momento.
+Mostrar mensajes claros en caso de opción inválida.
+Posible ampliación futura
+
+Conectar el visor a una base de datos real.
+Visualizar los datos en un dashboard interactivo.
