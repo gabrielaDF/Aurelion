@@ -189,6 +189,9 @@ Fin
 
 ### 3.4 Diagrama de flujo
 
+![Diagrama de flujo Modelo 1](imagenes/diagrama1.jpeg)
+![Diagrama de flujo Modelo 1](imagenes/diagrama2.jpeg)
+
 ## 4.Escalas de medición
 
 Escala Descripción Ejemplo
