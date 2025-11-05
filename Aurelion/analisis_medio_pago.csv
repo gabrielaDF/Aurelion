@@ -1,0 +1,5 @@
+Medio_Pago,Num_Transacciones,Ticket_Promedio,Desv_Est,Facturacion_Total
+efectivo,37,25265.38,13174.36,934819
+qr,30,23809.33,13646.53,714280
+tarjeta,26,17696.12,13108.42,460099
+transferencia,27,20082.19,12759.54,542219
