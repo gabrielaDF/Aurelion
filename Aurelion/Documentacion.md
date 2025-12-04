@@ -1034,3 +1034,175 @@ Las visualizaciones generadas y los archivos exportados facilitan la comunicaci�
 - Estabilización de ventas mensuales en todas las ciudades
 
 ---
+
+# Sprint 3 – Modelado Predictivo (Machine Learning)
+
+## Objetivo del Sprint
+
+El objetivo de este sprint es desarrollar un modelo de Machine Learning que permita clasificar a los clientes según su nivel de actividad, distinguiendo entre clientes activos (que han realizado compras) e inactivos (que aún no han comprado o dejaron de comprar).
+
+Para esto se entrenaron y evaluaron dos modelos:
+
+K-Nearest Neighbors (KNN)
+
+Regresión Logística
+
+## 1. Preparación y Limpieza de Datos
+
+Antes de entrenar los modelos se realizaron las siguientes actividades:
+
+### 1.1 Carga de datos
+
+Se trabajó con los archivos:
+
+clientes.xlsx
+
+productos.xlsx
+
+ventas.xlsx
+
+detalle_ventas.xlsx
+
+### 1.2 Unión de tablas
+
+Se integraron los datasets utilizando las llaves:
+
+id_cliente
+
+id_venta
+
+id_producto
+
+Se obtuvo un único dataframe consolidado.
+
+### 1.3 Creación de la variable objetivo
+
+Se definió una clasificación binaria:
+
+1 = Cliente Activo (realizó al menos una compra)
+
+0 = Cliente Inactivo (no ha realizado compras)
+
+### 1.4 Selección de características (features)
+
+Entre las variables empleadas se encuentran:
+
+Antigüedad del cliente
+
+Número de compras totales
+
+Cantidad total de productos adquiridos
+
+Ticket promedio
+
+Ciudad codificada
+
+Medio de pago codificado
+
+Categorías más frecuentes compradas por cliente
+
+### 1.5 Normalización
+
+Los datos se escalaron usando:
+
+StandardScaler()
+
+## 2. Entrenamiento de Modelos
+
+Los datos se dividieron en:
+
+80% entrenamiento
+
+20% prueba
+
+### 2.1 Modelo KNN
+
+Se entrenó con:
+
+KNeighborsClassifier(n_neighbors=5)
+
+### 2.2 Modelo de Regresión Logística
+
+Se entrenó utilizando:
+
+LogisticRegression()
+
+## 3. Resultados de Evaluación
+
+### 3.1 Resultados del modelo KNN
+
+Matriz de Confusión
+[[12  0]
+ [ 0 34]]
+
+Reporte de Clasificación
+
+Precisión: 1.00
+
+Recall: 1.00
+
+F1-score: 1.00
+
+Exactitud total: 100%
+
+### 3.2 Resultados del modelo de Regresión Logística
+
+Matriz de Confusión
+[[12  0]
+ [ 0 34]]
+
+Reporte de Clasificación
+
+Precisión: 1.00
+
+Recall: 1.00
+
+F1-score: 1.00
+
+Exactitud total: 100%
+
+## 4. Interpretación de los Resultados
+
+Ambos modelos clasificarion correctamente a los 46 clientes del conjunto de prueba.
+
+Los valores 1.00 en todas las métricas indican que los patrones entre clientes activos e inactivos están claramente diferenciados.
+
+Una exactitud perfecta también puede indicar un dataset con poca variabilidad o con características muy predictivas.
+
+Aun así, los resultados indican que el modelo es útil para identificar clientes activos e inactivos de manera confiable.
+
+## 5. Conclusiones del Sprint 3
+
+### • Conclusión 1 — Los modelos clasifican perfectamente
+
+Las características seleccionadas permiten distinguir fácilmente entre clientes con actividad y sin actividad, logrando predicciones perfectas en ambos modelos.
+
+### • Conclusión 2 — La información del dataset es muy predictiva
+
+Los datos disponibles contienen variables que explican muy bien el comportamiento del cliente.
+
+### • Conclusión 3 — Se recomienda aumentar la complejidad de los datos
+
+Para mejorar la robustez del modelo sería útil incorporar:
+
+Historial más amplio de compras
+
+Información demográfica adicional
+
+Clientes con comportamiento más variado
+
+### • Conclusión 4 — El sistema ya puede usarse para estrategias comerciales
+
+Con este modelo es posible:
+
+Detectar clientes inactivos
+
+Identificar clientes valiosos
+
+Activar campañas de retención
+
+Preparar un sistema de recomendación (siguiente sprint)
+
+### • Conclusión 5 — Ambos modelos son válidos
+
+Aunque ambos tienen desempeño idéntico, la Regresión Logística es ideal para producción por su interpretabilidad.
